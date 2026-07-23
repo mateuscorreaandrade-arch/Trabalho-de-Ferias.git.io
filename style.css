@@ -1,35 +1,194 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    text-align: center;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #2196F3;
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        180deg,
+        #bde7ff,
+        #d9c8ff,
+        #ffffff
+    );
+
+    color: #222;
+
+}
+
+
+
+
+/* Navbar */
+
+.navbar {
+
+    background: rgba(90, 70, 180, 0.8);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+
+.navbar-brand {
+
+    font-weight: bold;
+
+}
+
+
+
+
+
+/* Hero */
+
+.hero {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #8ed8ff,
+        #c59cff
+    );
+
     color: white;
-    padding: 20px;
+
 }
 
-main {
-    padding: 30px;
+
+
+.hero h1 {
+
+    font-size: 55px;
+
+    font-weight: bold;
+
 }
 
-button {
-    background-color: #2196F3;
-    color: white;
+
+
+.hero p {
+
+    font-size: 20px;
+
+    margin: 20px 0;
+
+}
+
+
+
+
+
+/* Botão */
+
+.btn-primary {
+
+    background: #7057d8;
+
     border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
+
+    padding: 12px 30px;
+
 }
 
-button:hover {
-    background-color: #1976D2;
+
+
+.btn-primary:hover {
+
+    background: #563cc5;
+
 }
+
+
+
+
+
+/* Títulos */
+
+h2 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #4b3a9b;
+
+}
+
+
+
+
+
+/* Cards */
+
+.card {
+
+    border: none;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+    height: 100%;
+
+}
+
+
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+
+
+/* Galeria */
+
+img {
+
+    transition: 0.3s;
+
+}
+
+
+
+img:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+/* Footer */
 
 footer {
-    background-color: #ddd;
-    padding: 15px;
-    margin-top: 30px;
-}
+
+    background: #4b3a9b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    }
