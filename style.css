@@ -19,7 +19,7 @@ body {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: url('https://picsum.photos/id/1015/1920/1080') center/cover;
+    background: url() center/cover;
     opacity: 0.25;
 }
 
