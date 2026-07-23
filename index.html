@@ -3,32 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batata</title>
+    <title>Mundo da Animação</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>hxnfjdjnddk</h1>
 
-    <header>
-        <h1>teste 1</h1>
-        <p>teste 2</p>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Mundo da Animação</a>
 
-    <main>
-        <h2>batata</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <p>batata</p>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tipos">Tipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comecar">Como começar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <button onclick="mostrarMensagem()">clique em mim</button>
-    </main>
+    <!-- Hero -->
+    <section id="inicio" class="hero d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Mundo da Animação</h1>
+            <p class="lead fs-4 mb-4">
+                Descubra como imagens ganham movimento e criam histórias incríveis.
+            </p>
+            <a href="#sobre" class="btn btn-primary btn-lg">Começar a aprender</a>
+        </div>
+    </section>
 
-    <footer>
-        <p>batata bs</p>
+    <!-- Sobre -->
+    <section id="sobre" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-center mb-4">O que é animação?</h2>
+                <p class="lead text-center">
+                    Animação é uma técnica que cria a ilusão de movimento através de uma sequência de imagens. 
+                    Cada quadro possui pequenas mudanças que, juntas, formam uma cena animada.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tipos -->
+    <section id="tipos" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Tipos de Animação</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Animação 2D</h3>
+                            <p class="card-text">Criada através de desenhos em duas dimensões, tradicional ou digital.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Animação 3D</h3>
+                            <p class="card-text">Utiliza modelos digitais para criar profundidade e realismo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Stop Motion</h3>
+                            <p class="card-text">Usa fotos em sequência de objetos físicos para criar movimento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como começar -->
+    <section id="comecar" class="container py-5">
+        <h2 class="text-center mb-4">Como começar uma animação?</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Criar uma ideia ou conceito</li>
+                    <li class="list-group-item">Escrever uma história (roteiro)</li>
+                    <li class="list-group-item">Fazer um storyboard</li>
+                    <li class="list-group-item">Criar as animações quadro a quadro</li>
+                    <li class="list-group-item">Editar o resultado final (som, efeitos, etc)</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria - Pixel Studio -->
+    <section class="container py-5">
+        <h2 class="text-center mb-5">Galeria - Pixel Studio</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <img src="https://picsum.photos/id/1015/400/250" 
+                     class="img-fluid rounded shadow-sm" 
+                     alt="Pixel Art Personagem - Pixel Studio">
+            </div>
+            <div class="col-md-4">
+                <img src="https://picsum.photos/id/133/400/250" 
+                     class="img-fluid rounded shadow-sm" 
+                     alt="Pixel Art Aventura - Pixel Studio">
+            </div>
+            <div class="col-md-4">
+                <img src="https://picsum.photos/id/201/400/250" 
+                     class="img-fluid rounded shadow-sm" 
+                     alt="Pixel Art Animação - Pixel Studio">
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <small class="text-muted">Exemplos de artes criadas no app <strong>Pixel Studio</strong></small>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Mundo da Animação. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-
 </body>
-</html>
+                        </html>
