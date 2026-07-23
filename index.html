@@ -1,97 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo da Animação</title>
-
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Mundo da Animação</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <a class="navbar-brand" href="#">🎬 Mundo da Animação</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="menu">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tipos">Tipos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#comecar">Como começar</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Animação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tipos">Tipos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#como-comecar">Como Começar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section id="inicio" class="hero d-flex align-items-center text-center text-white">
+    <section id="inicio" class="hero d-flex align-items-center justify-content-center text-center">
         <div class="container">
-            <h1 class="display-3 fw-bold">Mundo da Animação</h1>
-            <p class="lead fs-4 mb-4">
-                Descubra como imagens ganham movimento e criam histórias incríveis.
-            </p>
-            <a href="#sobre" class="btn btn-primary btn-lg">Começar a aprender</a>
+            <h1 class="display-3 fw-bold text-white">Mundo da Animação</h1>
+            <p class="lead text-white mb-4">Descubra como imagens ganham movimento e criam histórias.</p>
+            <a href="#sobre" class="btn btn-primary btn-lg">Começar Aprendizado</a>
         </div>
     </section>
 
-    <!-- Sobre -->
-    <section id="sobre" class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-center mb-4">O que é animação?</h2>
-                <p class="lead text-center">
-                    Animação é uma técnica que cria a ilusão de movimento através de uma sequência de imagens. 
-                    Cada quadro possui pequenas mudanças que, juntas, formam uma cena animada.
-                </p>
+    <!-- Sobre Animação -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">O que é Animação?</h2>
+                    <p class="lead">Animação é uma técnica que cria a ilusão de movimento através de uma sequência de imagens. Cada quadro possui pequenas mudanças que, juntas, formam uma cena dinâmica.</p>
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="fas fa-images fa-3x text-primary mb-3"></i>
+                                <h5>Imagens em Sequência</h5>
+                                <p>Uma série de desenhos ou fotos ligeiramente diferentes.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="fas fa-play fa-3x text-primary mb-3"></i>
+                                <h5>Ilusão de Movimento</h5>
+                                <p>O nosso cérebro conecta os quadros criando a sensação de ação.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="fas fa-book fa-3x text-primary mb-3"></i>
+                                <h5>Criação de Histórias</h5>
+                                <p>Personagens ganham vida e contam histórias emocionantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Tipos -->
-    <section id="tipos" class="bg-light py-5">
+    <!-- Tipos de Animação -->
+    <section id="tipos" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Tipos de Animação</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Animação 2D</h3>
-                            <p class="card-text">Criada através de desenhos em duas dimensões, tradicional ou digital.</p>
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="https://picsum.photos/id/1015/400/250" class="card-img-top" alt="Animação 2D">
+                        <div class="card-body">
+                            <h5 class="card-title">Animação 2D</h5>
+                            <p class="card-text">Desenhos feitos em duas dimensões que criam personagens e cenas vibrantes.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Animação 3D</h3>
-                            <p class="card-text">Utiliza modelos digitais para criar profundidade e realismo.</p>
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="https://picsum.photos/id/106/400/250" class="card-img-top" alt="Animação 3D">
+                        <div class="card-body">
+                            <h5 class="card-title">Animação 3D</h5>
+                            <p class="card-text">Utiliza modelos digitais para criar personagens e ambientes com profundidade e realismo.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Stop Motion</h3>
-                            <p class="card-text">Usa fotos em sequência de objetos físicos para criar movimento.</p>
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="https://picsum.photos/id/201/400/250" class="card-img-top" alt="Stop Motion">
+                        <div class="card-body">
+                            <h5 class="card-title">Stop Motion</h5>
+                            <p class="card-text">Fotos tiradas em sequência de objetos físicos ou modelos, criando movimento frame a frame.</p>
                         </div>
                     </div>
                 </div>
@@ -99,56 +108,48 @@
         </div>
     </section>
 
-    <!-- Como começar -->
-    <section id="comecar" class="container py-5">
-        <h2 class="text-center mb-4">Como começar uma animação?</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <ol class="list-group list-group-numbered">
-                    <li class="list-group-item">Criar uma ideia ou conceito</li>
-                    <li class="list-group-item">Escrever uma história (roteiro)</li>
-                    <li class="list-group-item">Fazer um storyboard</li>
-                    <li class="list-group-item">Criar as animações quadro a quadro</li>
-                    <li class="list-group-item">Editar o resultado final (som, efeitos, etc)</li>
-                </ol>
+    <!-- Como Começar -->
+    <section id="como-comecar" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Como Começar a Criar Animações</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item"><strong>1. Criar uma Ideia</strong><br>Pense em uma história simples ou conceito.</li>
+                        <li class="list-group-item"><strong>2. Fazer uma História</strong><br>Desenvolva o enredo com começo, meio e fim.</li>
+                        <li class="list-group-item"><strong>3. Criar um Roteiro</strong><br>Escreva diálogos e ações.</li>
+                        <li class="list-group-item"><strong>4. Fazer um Storyboard</strong><br>Desenhe os quadros principais.</li>
+                        <li class="list-group-item"><strong>5. Animar as Cenas</strong><br>Use software ou papel e lápis.</li>
+                        <li class="list-group-item"><strong>6. Editar o Resultado</strong><br>Junte tudo e adicione som.</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Galeria - Pixel Studio -->
-    <section class="container py-5">
-        <h2 class="text-center mb-5">Galeria - Pixel Studio</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <img src="https://picsum.photos/id/1015/400/250" 
-                     class="img-fluid rounded shadow-sm" 
-                     alt="Pixel Art Personagem - Pixel Studio">
+    <!-- Galeria -->
+    <section id="galeria" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Galeria de Inspiração</h2>
+            <div class="row g-4">
+                <div class="col-md-4"><img src="https://picsum.photos/id/237/400/300" class="img-fluid rounded shadow-sm gallery-img" alt="Desenho"></div>
+                <div class="col-md-4"><img src="https://picsum.photos/id/180/400/300" class="img-fluid rounded shadow-sm gallery-img" alt="Storyboard"></div>
+                <div class="col-md-4"><img src="https://picsum.photos/id/201/400/300" class="img-fluid rounded shadow-sm gallery-img" alt="Personagem"></div>
+                <div class="col-md-4"><img src="https://picsum.photos/id/133/400/300" class="img-fluid rounded shadow-sm gallery-img" alt="Cena"></div>
+                <div class="col-md-4"><img src="https://picsum.photos/id/251/400/300" class="img-fluid rounded shadow-sm gallery-img" alt="Stop Motion"></div>
+                <div class="col-md-4"><img src="https://picsum.photos/id/60/400/300" class="img-fluid rounded shadow-sm gallery-img" alt="Animação"></div>
             </div>
-            <div class="col-md-4">
-                <img src="https://picsum.photos/id/133/400/250" 
-                     class="img-fluid rounded shadow-sm" 
-                     alt="Pixel Art Aventura - Pixel Studio">
-            </div>
-            <div class="col-md-4">
-                <img src="https://picsum.photos/id/201/400/250" 
-                     class="img-fluid rounded shadow-sm" 
-                     alt="Pixel Art Animação - Pixel Studio">
-            </div>
-        </div>
-        <div class="text-center mt-4">
-            <small class="text-muted">Exemplos de artes criadas no app <strong>Pixel Studio</strong></small>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 text-center">
-        <div class="container">
-            <p class="mb-0">&copy; 2026 Mundo da Animação. Todos os direitos reservados.</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2026 Mundo da Animação - Um projeto educativo</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-                        </html>
+        </html>
