@@ -31,7 +31,11 @@ body {
     transform: translateY(-12px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
-
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
 .gallery-img:hover {
     transform: scale(1.08);
 }
